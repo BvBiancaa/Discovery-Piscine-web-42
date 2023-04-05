@@ -1,0 +1,82 @@
+body, html {
+	background-color: white;
+}
+
+div {
+	display: inline-block;
+	background-color: rgb(245, 200, 205);
+	margin-left: 40%;
+}
+
+table {
+	box-shadow: 10px 10px #6b5353;
+}
+
+p, h1, h2, h3 {
+	font-family: "Gill Sans", sans-serif;
+}
+
+#gen {
+	position: center;
+}
+
+#head {
+		background-color: rgb(245, 199, 206);
+		margin-left: 26%;
+}
+#title{
+	background-color: rgb(245, 199, 206);
+	margin-left: 29%;
+}
+
+#foto {
+	position: center;
+	height: 280px;
+	width: 400px;
+	background-color: rgb(245, 199, 206);
+	background-image: url("imgs/profile.jpg");
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+#nome {
+	background-color: rgb(245, 199, 206);
+	margin-left: 32%;
+}
+
+#scuola {
+	margin-left:37%;
+}
+
+#social {
+	background-image: url("imgs/social.webp");
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 28%;
+	width: 300px;
+	height: 100px;
+}
+
+#contact {
+	background-color: black;
+	height: 100px;
+	width: 450px;
+	margin-left:0%;
+}
+
+a:link, a:active, a:visited {
+	color: white;
+	position: fixed;
+	margin-left: 10%;
+	margin-top: 2%;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(194, 155, 231);
+	text-decoration: none;
+}

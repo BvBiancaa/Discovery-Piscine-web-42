@@ -1,0 +1,23 @@
+body, html {
+	overflow-x:auto;
+	height: 100%;
+	margin:0;
+}
+table {
+	overflow-x:auto;
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	border-collapse: collapse;
+}
+.one {
+	width: 50%;
+	text-align: left;
+	background-color : pink;
+}
+
+.two {
+	width: 50%;
+	text-align: left;
+	background-color : rgb(142, 247, 142);
+}

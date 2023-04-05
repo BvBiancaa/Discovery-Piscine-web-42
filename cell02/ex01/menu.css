@@ -1,0 +1,41 @@
+body {
+	background-color: pink;
+}
+
+.menu {
+	background-color: #7169a1;
+	color: white;
+	padding: 30px;
+	font-size: 16px;
+	border: none;
+    }
+    
+.button {
+	background-color: rgb(154, 154, 196);
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+    }
+
+.link {
+	display: none;
+	position: center;
+	background-color: #f5b0b0;
+	min-width: 160px;
+	z-index: 1;
+    }
+
+.link a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+    }
+    
+    .link a:hover {background-color: #fdc882;}
+
+    .menu:hover .link {display: block;}
+    
+    .menu:hover .button {background-color: #fdc882;}
