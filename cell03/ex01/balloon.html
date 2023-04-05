@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>balloon</title>
+		<style>
+			#pa {
+				background-color: red;
+				height: 200px;
+				width: 200px;
+				border-radius: 2000px;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function updateColor()
+			{
+				var xDiv = document.getElementById('pa');
+				let v =  getComputedStyle(xDiv).backgroundColor;
+				if (v == "rgb(255, 0, 0)")
+					xDiv.style.backgroundColor = "rgb(124, 252, 0)";
+				else if (v == "rgb(124, 252, 0)")
+					xDiv.style.backgroundColor = "rgb(176, 224, 230)";
+				else if (v == "rgb(176, 224, 230)")
+					xDiv.style.backgroundColor = "rgb(255, 0, 0)";
+			}
+			function updateSize()
+			{
+				var xDiv = document.getElementById('pa');
+				var v =  parseInt(getComputedStyle(xDiv).height);
+				console.log(v);
+				v += 10;
+				let str;
+				str = v.toString();
+				str = str + 'px';
+				if (v <= 420)
+				{
+					xDiv.style.height = str;
+					xDiv.style.width = str;
+					updateColor();
+				}
+				else
+				{
+					xDiv.style.height = '200px';
+					xDiv.style.width = '200px';
+					xDiv.style.backgroundColor = "rgb(255, 0, 0)";
+				}
+			}
+			function lessSize()
+			{
+				var xDiv = document.getElementById('pa');
+				var v =  parseInt(getComputedStyle(xDiv).height);
+				console.log(v);
+				v -= 5;
+				let str;
+				str = v.toString();
+				str = str + 'px';
+				if (v >= 200)
+				{
+					xDiv.style.height = str;
+					xDiv.style.width = str;
+					updateColor();
+				}
+			}
+		</script>
+		<div id="pa" onclick="updateSize()" onmouseleave="lessSize()"></div>
+	</body>
+</html>

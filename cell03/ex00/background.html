@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colors</title>
+		<link rel="stylesheet" href="background.css">
+	</head>
+	<body>
+		<script>
+			function random_rgba()
+			{
+				var o = Math.round, r = Math.random, s = 255;
+				return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+			}
+			function changeBackground()
+			{
+				var color = random_rgba();
+				document.body.style.background = color;
+			}
+		</script>
+		<div>
+			<button class="button" onclick="changeBackground()">Click me!</button>
+		</div>
+	</body>
+</html>
